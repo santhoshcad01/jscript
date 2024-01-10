@@ -1,65 +1,122 @@
-/*a=60;
-
-d=55;
-d=Number(d);
-a=Number(a);
-a=a+d;
-console.log(a);
-
-var x=true;
-console.log(x, typeof x);
-x=Number(x);
-console.log(x, typeof x);
+/* v1=35;
+console.log(v1);
+var output=v1=="s" ? "v1 has value" : "v1 doesnot have value";
+console.log(output);
 
 
-// const a=10;
+m=51;
+var mark= (35<=m && m<60) ? "grade c" : (60<=m && m<80) ?
+"grade B" : (80<=m && m<90) ? "grade A" : (90<=m && m<=100) ?
+"grade Distinction" : "no grade";
+console.log(mark);
 
-const f={name:"dani", age:45}
-console.log(f, typeof f);
-f.name="danidanils";
-console.log(f, typeof f);
+function findgrade1(m,k){
+    var mark= (35<=m && m<60) ? "grade c" : (60<=m && m<80) ?
+"grade B" : (80<=m && m<90) ? "grade A" : (90<=m && m<=100) ?
+"grade Distinction" : "no fail";
+console.log(k,mark);
+}
+findgrade1(81,"sandy"); 
 
-let v1=10;
-let v2=20;
- console.log(v1+v2);
- console.log(v1-v2);
- console.log(v1*v2);
- console.log(v1^v2);
- console.log(v1/v2);
- console.log(v1%v2);
- console.log(v1**v2);
- console.log(v1&v2);
+var findgrade2=(m,k)=>{
+    console.log("under process");
+}
 
+console.log(findgrade2); 
 
- v1=++v1;
- console.log(v1);
- v1=--v1;
- console.log(v1);
+var findgrade2=(m,k)=>{
+    var mark=(35<=m && m<60) ? "grade c":
+    (60<=m && m<80) ? "grade A"
+}
+console.log(findgrade2(36,"dani"));*/
 
- v1=25;
- console.log(v1);
-  v1+=20; //v1=v1+20;
- console.log(v1);
- v1-=20; //v1=v1-v2;
- console.log(v1);
- 
- v1/=20;
- console.log(v1);
+//using functions
 
- //Compression operator
+function checkgrade(){
+    console.log("Welcome");
+    console.log("you do everthing");
+}
+checkgrade();
 
- console.log(v1==5);
- console.log(v=="5",typeof v1);
- console.log(v1!=1);
- console.log(v1!=="5", typeof v1);
- */
+var checkgrade1=(a,b)=>{
+    console.log(a+b);
+    return a+b;
+}
 
- v1="s";
- console.log(7==5 || 7<2 || 7>5);
- console.log(v1=="s");
- console.log(!(v1=="s"));
+checkgrade();
+console.log("added value",checkgrade1(1,2))
 
- console.log(v1);
- var output=v1=="s"? "v1 has value" : "v1 doesnot have value";
- console.log(output);
- 
+var printmsg =checkgrade1(1,2);
+console.log(printmsg);
+
+//trying to short the code 
+var checkgrade2=(a,b)=> a+b;
+console.log(checkgrade2(5,10));
+
+//trying to short the code
+var checkgrade2=()=> checkgrade();
+console.log(checkgrade2());
+
+//conditional statements
+//if condition
+function gradechecking(m){
+    if(m>0 && m<=35)
+    {
+        console.log("no grade");
+        console.log("fail");
+
+    }
+}
+gradechecking(20);
+
+//nested if else condition
+function gradechecking(m)
+{
+    if(m>0 && m<=40)
+    {
+        console.log("no grade");
+        console.log("fail");
+    }
+    else{
+        console.log("pass");
+        console.log("other grades");
+    }
+}
+
+gradechecking(45);
+
+//nested if else condition
+function gradechecking1(m)
+{
+    if(m>0 && m<=40)
+    {
+        console.log("no grade");
+        console.log("fail");
+    }
+    else{
+        if(m>41 && m<=74){
+        console.log("pass");
+        console.log("other grades");
+    }
+    }
+}
+gradechecking1(30)
+
+function checkingwithswitch(a)
+{
+    switch(m){
+        case 1:
+            statementt
+            break;
+        case 2:
+            statement
+            break;
+        default:
+            statement
+    }
+    
+}
+
+checkingwithswitch(2);
+
+            
