@@ -104,19 +104,40 @@ gradechecking1(30)
 
 function checkingwithswitch(a)
 {
-    switch(m){
-        case 1:
-            statementt
+    switch(a){
+        case 's':
+            console.log(a);
             break;
-        case 2:
-            statement
+        case 'h':
+            console.log("case 2 executed",a);
             break;
+        case 3:
+            break;      
+        
         default:
-            statement
+            console.log(a);
     }
     
 }
+{
 
-checkingwithswitch(2);
+checkingwithswitch(1);
 
-            
+switch(a){
+    case 's':
+        console.log(a);
+        break;
+    case 'h':
+        console.log("case 2 executed",a);
+        break;
+    case 3:
+        break;      
+    
+    default:
+        console.log(a);
+}
+
+}
+
+checkingwithswitch(1);
+
