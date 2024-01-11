@@ -13,22 +13,39 @@
         <input type="text" id="v1">
         <input type="text" id="v2">
         <input type="submit" value="add" onclick="addition()">
-
+        <input type="submit" value="subtrachin" onclick="addition()">
+        <input type="submit" value="Multipluac  " onclick="addition()">
+        <input type="submit" value="add" onclick="addition()">
      
 
       <p id="result">for output</p>
    <script>
-       function addition()
-       {
+       function addition(){
+
         var value1=document.getElementById("v1").value;
         var value2=document.getElementById("v2").value;
-        value1=Number(value1);
-        value2=Number(value2);
+        var value1=Number(value1);
+        var value1=Number(value1);
+
+        var a="+";
+        switch(a){
+            case 'x':
+            document.getElementById("result").innerHTML=value1 + value2;
+            break;
+            case '-':
+            document.getElementById("result").innerHTML=value1 + value2;
+            break;
+            case '+':
+            document.getElementById("result").innerHTML=value1 + value2;
+            break;
+            case '/':
+            document.getElementById("result").innerHTML=value1 + value2;
+            break;
+
         
-
-
-        document.getElementById("result").innerHTML="Added value of"+ value1+"and"+value2+"is....";
+        document.getElementById("result").innerHTML="Added value of"+ " " +value1+" "+"and"+" " + value2+" "+"is....";
        }
+    }
     </script>
     
 </body>
