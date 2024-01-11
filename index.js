@@ -125,19 +125,21 @@ checkingwithswitch(1);
 
 switch(a){
     case 's':
-        console.log(a);
+        console.log('executed case s', typeof a);
         break;
     case 'h':
         console.log("case 2 executed",a);
         break;
     case 3:
+
+    console.log("case 3 executed");
         break;      
     
     default:
-        console.log(a);
+        alert("wellcome ot js script");
 }
 
 }
 
-checkingwithswitch(1);
+checkingwithswitch(5);
 

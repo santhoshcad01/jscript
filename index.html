@@ -9,8 +9,26 @@
     <h1>
         Wellcome to Greate Furits Shop
     </h1>
-    <script src="index.js">
-       
+     
+        <input type="text" id="v1">
+        <input type="text" id="v2">
+        <input type="submit" value="add" onclick="addition()">
+
+     
+
+      <p id="result">for output</p>
+   <script>
+       function addition()
+       {
+        var value1=document.getElementById("v1").value;
+        var value2=document.getElementById("v2").value;
+        value1=Number(value1);
+        value2=Number(value2);
+        
+
+
+        document.getElementById("result").innerHTML="Added value of"+ value1+"and"+value2+"is....";
+       }
     </script>
     
 </body>
